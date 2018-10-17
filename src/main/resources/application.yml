@@ -1,0 +1,10 @@
+my:
+  ehcache:
+    path: /data/java/
+spring:
+  application:
+    name: ehcache-guide
+  datasource:
+    driver-class-name:
+server:
+  port: 8080
