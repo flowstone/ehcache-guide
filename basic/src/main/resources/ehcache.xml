@@ -4,7 +4,7 @@
 
   <ehcache:cache-template name="myDefaultTemplate">
     <ehcache:expiry>
-      <ehcache:tti unit="seconds">2</ehcache:tti>
+      <ehcache:tti unit="seconds">10</ehcache:tti>
     </ehcache:expiry>
 
   </ehcache:cache-template>

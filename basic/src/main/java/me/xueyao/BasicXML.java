@@ -26,9 +26,9 @@ public class BasicXML {
       basicCache.put(1L, "你为什么那么奇怪的看着我");
       //Thread.sleep(5000L);
       //获得缓存中的值
+      //basicCache.remove(1L);
       String value = basicCache.get(1L);
       LOGGER.info("Ehcache缓存中的数据为'{}'", value);
-
       LOGGER.info("关闭缓存管理器");
     } catch (Exception e) {
       e.printStackTrace();
