@@ -1,0 +1,19 @@
+<ehcache:config
+        xmlns:ehcache="http://www.ehcache.org/v3"
+        xmlns:jcache="http://www.ehcache.org/v3/jsr107">
+
+  <ehcache:cache-template name="myDefaultTemplate">
+    <ehcache:expiry>
+      <ehcache:tti unit="seconds">2</ehcache:tti>
+    </ehcache:expiry>
+
+  </ehcache:cache-template>
+
+  <ehcache:cache alias="basicCache" uses-template="myDefaultTemplate">
+
+    <ehcache:key-type>java.lang.Long</ehcache:key-type>
+    <ehcache:value-type>java.lang.String</ehcache:value-type>
+    <ehcache:heap unit="entries">200</ehcache:heap>
+  </ehcache:cache>
+
+</ehcache:config>
